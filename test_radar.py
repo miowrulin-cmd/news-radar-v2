@@ -30,8 +30,8 @@ def test_訊息最多只列五則():
         for n in range(1, 11)
     ]
     message = build_message("測試主題", items)
-    assert "3 則" in message
-    assert "新聞4" not in message
+    assert "5 則" in message
+    assert "新聞6" not in message
 
 
 # 驗記憶：看過的新聞不應該再出現在挑選結果裡。
