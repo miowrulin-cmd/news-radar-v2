@@ -8,10 +8,10 @@ import urllib.request
 import xml.etree.ElementTree as ET
 
 # 你關注的主題。換成上週選定的那個。
-KEYWORD = "遊輪"
+KEYWORD = "歌手劉宇寧"
 
 # 一則訊息最多列幾條新聞，減少訊息過多。
-MAX_ITEMS = 3
+MAX_ITEMS = 5
 
 # 雷達的記憶檔：看過的新聞連結都記在這裡。
 SEEN_FILE = "seen.json"
