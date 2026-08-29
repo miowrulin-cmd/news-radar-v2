@@ -23,15 +23,15 @@ def test_訊息包含關鍵字與標題():
     assert "2 則" in message
 
 
-# 驗上限：給十條新聞，訊息裡應該只出現五條。
+# 驗上限：給十條新聞，訊息裡應該只出現三條。
 def test_訊息最多只列五則():
     items = [
         {"title": "新聞" + str(n), "link": "https://example.com/" + str(n)}
         for n in range(1, 11)
     ]
     message = build_message("測試主題", items)
-    assert "5 則" in message
-    assert "新聞6" not in message
+    assert "3 則" in message
+    assert "新聞4" not in message
 
 
 # 驗記憶：看過的新聞不應該再出現在挑選結果裡。
